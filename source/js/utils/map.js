@@ -10,7 +10,7 @@ const maps = function () {
     };
 
     const iconOptions = {
-      iconUrl: '/img/svg/map-marker.svg',
+      iconUrl: './img/svg/map-marker.svg',
       iconSize: [34, 46],
       iconAnchor: [24, 36],
     };
