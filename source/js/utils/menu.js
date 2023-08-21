@@ -17,7 +17,6 @@ const menu = function () {
 
       menuList.classList.add('is-active');
       mainHeaderContainer.classList.add('main-header__container--active');
-      navigation.classList.remove('main-header__navigation--disabled');
       mainHeader.style.position = 'absolute';
       document.querySelector('body').style.overflow = 'visible';
 
