@@ -7,12 +7,12 @@
   padding: 312px 0 307px;
 
   background-color: $color-siam;
-  background-image: url("../img/feedback/background-desktop.png");
+  background-image: url("../img/feedback/background-desktop.webp");
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/feedback/background-desktop@2x.png");
+    background-image: url("../img/feedback/background-desktop@2x.webp");
   }
 
   h2 {
@@ -57,10 +57,10 @@
   @include vp-1199 {
     padding: 195px 236px 183px;
 
-    background-image: url("../img/feedback/background-tablet.png");
+    background-image: url("../img/feedback/background-tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/feedback/background-tablet@2x.png");
+      background-image: url("../img/feedback/background-tablet@2x.webp");
     }
 
     h2 {
@@ -88,10 +88,10 @@
     padding: 179px 15px 160px;
 
     background-position: initial;
-    background-image: url("../img/feedback/background-mobile.png");
+    background-image: url("../img/feedback/background-mobile.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/feedback/background-mobile@2x.png");
+      background-image: url("../img/feedback/background-mobile@2x.webp");
     }
 
     h2 {

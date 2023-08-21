@@ -13,26 +13,26 @@
   padding: 182px 120px 80px;
 
   &--1 {
-    background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-1.png") center/cover no-repeat;
+    background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-1.webp") center/cover no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-1@2x.png") center/cover no-repeat;
+      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-1@2x.webp") center/cover no-repeat;
     }
   }
 
   &--2 {
-    background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-2.png") center/cover no-repeat;
+    background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-2.webp") center/cover no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-2@2x.png") center/cover no-repeat;
+      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-2@2x.webp") center/cover no-repeat;
     }
   }
 
   &--3 {
-    background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-3.png") center/cover no-repeat;
+    background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-3.webp") center/cover no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-3@2x.png") center/cover no-repeat;
+      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-3@2x.webp") center/cover no-repeat;
     }
   }
 
@@ -44,28 +44,28 @@
     min-height: 1024px;
 
     &--1 {
-      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-1.png") center/cover no-repeat;
+      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-1.webp") center/cover no-repeat;
 
       @media (min-resolution: 2dppx) {
-        background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-1@2x.png") center/cover no-repeat;
+        background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-1@2x.webp") center/cover no-repeat;
       }
     }
 
     &--2 {
       padding: 110px 0 90px;
-      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-2.png") center/cover no-repeat;
+      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-2.webp") center/cover no-repeat;
 
       @media (min-resolution: 2dppx) {
-        background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-2@2x.png") center/cover no-repeat;
+        background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-2@2x.webp") center/cover no-repeat;
       }
     }
 
     &--3 {
       padding: 0 0 118px;
-      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-3.png") 21%/cover no-repeat;
+      background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-3.webp") 21%/cover no-repeat;
 
       @media (min-resolution: 2dppx) {
-        background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-3@2x.png") 21%/cover no-repeat;
+        background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-3@2x.webp") 21%/cover no-repeat;
       }
     }
   }

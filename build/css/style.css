@@ -2122,27 +2122,27 @@ button,
   padding: 182px 120px 80px;
 }
 .slider-hero__item--1 {
-  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-1.png") center/cover no-repeat;
+  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-1.webp") center/cover no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-hero__item--1 {
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-1@2x.png") center/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-1@2x.webp") center/cover no-repeat;
   }
 }
 .slider-hero__item--2 {
-  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-2.png") center/cover no-repeat;
+  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-2.webp") center/cover no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-hero__item--2 {
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-2@2x.png") center/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-2@2x.webp") center/cover no-repeat;
   }
 }
 .slider-hero__item--3 {
-  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-3.png") center/cover no-repeat;
+  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-3.webp") center/cover no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-hero__item--3 {
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-3@2x.png") center/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-desktop-3@2x.webp") center/cover no-repeat;
   }
 }
 @media (max-width: 1199px) {
@@ -2160,34 +2160,34 @@ button,
     min-height: 1024px;
   }
   .slider-hero__item--1 {
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-1.png") center/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-1.webp") center/cover no-repeat;
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .slider-hero__item--1 {
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-1@2x.png") center/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-1@2x.webp") center/cover no-repeat;
   }
 }
 @media (max-width: 1199px) {
   .slider-hero__item--2 {
     padding: 110px 0 90px;
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-2.png") center/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-2.webp") center/cover no-repeat;
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .slider-hero__item--2 {
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-2@2x.png") center/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-2@2x.webp") center/cover no-repeat;
   }
 }
 @media (max-width: 1199px) {
   .slider-hero__item--3 {
     padding: 0 0 118px;
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-3.png") 21%/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-3.webp") 21%/cover no-repeat;
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .slider-hero__item--3 {
-    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-3@2x.png") 21%/cover no-repeat;
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%), #809cba url("../img/hero/background-slider-tablet-3@2x.webp") 21%/cover no-repeat;
   }
 }
 @media (max-width: 767px) {
@@ -2521,7 +2521,7 @@ button,
   width: 602px;
   height: 100%;
   background-color: #e5e1e6;
-  background-image: url("../img/tours/tours-clouds-desktop.png");
+  background-image: url("../img/tours/tours-clouds-desktop.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2530,19 +2530,19 @@ button,
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .tours::after {
-    background-image: url("../img/tours/tours-clouds-desktop@2x.png");
+    background-image: url("../img/tours/tours-clouds-desktop@2x.webp");
   }
 }
 @media (max-width: 1199px) {
   .tours::after {
     width: 294px;
     height: 632px;
-    background-image: url("../img/tours/tours-clouds-tablet.png");
+    background-image: url("../img/tours/tours-clouds-tablet.webp");
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .tours::after {
-    background-image: url("../img/tours/tours-clouds-tablet@2x.png");
+    background-image: url("../img/tours/tours-clouds-tablet@2x.webp");
   }
 }
 @media (max-width: 767px) {
@@ -2550,12 +2550,12 @@ button,
     top: 149px;
     width: 176px;
     height: 571px;
-    background-image: url("../img/tours/tours-clouds-mobile.png");
+    background-image: url("../img/tours/tours-clouds-mobile.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .tours::after {
-    background-image: url("../img/tours/tours-clouds-mobile@2x.png");
+    background-image: url("../img/tours/tours-clouds-mobile@2x.webp");
   }
 }
 
@@ -2752,33 +2752,33 @@ button,
   background-color: #428ca5;
 }
 .slider-tours__item--1 {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-1.png") center/cover no-repeat;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-1.png") center/cover no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-1.webp") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-1.webp") center/cover no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-tours__item--1 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-1@2x.png") center/cover no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-1@2x.png") center/cover no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-1@2x.webp") center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-1@2x.webp") center/cover no-repeat;
   }
 }
 .slider-tours__item--2 {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-2.png") center/cover no-repeat;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-2.png") center/cover no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-2.webp") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-2.webp") center/cover no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-tours__item--2 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-2@2x.png") center/cover no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-2@2x.png") center/cover no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-2@2x.webp") center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-2@2x.webp") center/cover no-repeat;
   }
 }
 .slider-tours__item--3 {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-3.png") center/cover no-repeat;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-3.png") center/cover no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-3.webp") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-3.webp") center/cover no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-tours__item--3 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-3@2x.png") center/cover no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-3@2x.png") center/cover no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-desktop-3@2x.webp") center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-desktop-3@2x.webp") center/cover no-repeat;
   }
 }
 .slider-tours__item h3 {
@@ -3459,7 +3459,7 @@ button,
   right: 0;
   width: 620px;
   height: 140px;
-  background-image: url("../img/about/about-clouds.png");
+  background-image: url("../img/about/about-clouds.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3468,7 +3468,7 @@ button,
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .about::before {
-    background-image: url("../img/about/about-clouds@2x.png");
+    background-image: url("../img/about/about-clouds@2x.webp");
   }
 }
 .about::after {
@@ -3477,7 +3477,7 @@ button,
   left: 0;
   width: 808px;
   height: 474px;
-  background-image: url("../img/about/about-image-desktop.png");
+  background-image: url("../img/about/about-image-desktop.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3486,7 +3486,7 @@ button,
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .about::after {
-    background-image: url("../img/about/about-image-desktop@2x.png");
+    background-image: url("../img/about/about-image-desktop@2x.webp");
   }
 }
 @media (max-width: 1199px) {
@@ -3518,12 +3518,12 @@ button,
     top: 81px;
     width: 476px;
     height: 403px;
-    background-image: url("../img/about/about-image-tablet.png");
+    background-image: url("../img/about/about-image-tablet.webp");
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .about::after {
-    background-image: url("../img/about/about-image-tablet@2x.png");
+    background-image: url("../img/about/about-image-tablet@2x.webp");
   }
 }
 @media (max-width: 767px) {
@@ -3555,12 +3555,12 @@ button,
     top: 3px;
     width: 320px;
     height: 402px;
-    background-image: url("../img/about/about-image-mobile.png");
+    background-image: url("../img/about/about-image-mobile.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .about::after {
-    background-image: url("../img/about/about-image-mobile@2x.png");
+    background-image: url("../img/about/about-image-mobile@2x.webp");
   }
 }
 
@@ -3856,7 +3856,7 @@ button,
   left: 0;
   width: 709px;
   height: 377px;
-  background-image: url("../img/advantages/advantages-clouds-primary.png");
+  background-image: url("../img/advantages/advantages-clouds-primary.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3865,7 +3865,7 @@ button,
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .advantages::before {
-    background-image: url("../img/advantages/advantages-clouds-primary@2x.png");
+    background-image: url("../img/advantages/advantages-clouds-primary@2x.webp");
   }
 }
 .advantages::after {
@@ -3874,7 +3874,7 @@ button,
   right: 0;
   width: 603px;
   height: 173px;
-  background-image: url("../img/advantages/advantages-clouds-secundary.png");
+  background-image: url("../img/advantages/advantages-clouds-secundary.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3883,7 +3883,7 @@ button,
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .advantages::after {
-    background-image: url("../img/advantages/advantages-clouds-secundary@2x.png");
+    background-image: url("../img/advantages/advantages-clouds-secundary@2x.webp");
   }
 }
 @media (max-width: 1199px) {
@@ -4216,13 +4216,13 @@ button,
   text-align: center;
   padding: 312px 0 307px;
   background-color: #6d7253;
-  background-image: url("../img/feedback/background-desktop.png");
+  background-image: url("../img/feedback/background-desktop.webp");
   background-position: center;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .feedback {
-    background-image: url("../img/feedback/background-desktop@2x.png");
+    background-image: url("../img/feedback/background-desktop@2x.webp");
   }
 }
 .feedback h2 {
@@ -4264,12 +4264,12 @@ button,
 @media (max-width: 1199px) {
   .feedback {
     padding: 195px 236px 183px;
-    background-image: url("../img/feedback/background-tablet.png");
+    background-image: url("../img/feedback/background-tablet.webp");
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .feedback {
-    background-image: url("../img/feedback/background-tablet@2x.png");
+    background-image: url("../img/feedback/background-tablet@2x.webp");
   }
 }
 @media (max-width: 1199px) {
@@ -4300,12 +4300,12 @@ button,
   .feedback {
     padding: 179px 15px 160px;
     background-position: initial;
-    background-image: url("../img/feedback/background-mobile.png");
+    background-image: url("../img/feedback/background-mobile.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .feedback {
-    background-image: url("../img/feedback/background-mobile@2x.png");
+    background-image: url("../img/feedback/background-mobile@2x.webp");
   }
 }
 @media (max-width: 767px) {
@@ -4797,14 +4797,14 @@ button,
       align-self: flex-end;
   width: 585px;
   height: 324px;
-  background-image: url("../img/map/map-desktop.png");
+  background-image: url("../img/map/map-desktop.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .contacts__location-wrapper {
-    background-image: url("../img/map/map-desktop@2x.png");
+    background-image: url("../img/map/map-desktop@2x.webp");
   }
 }
 .contacts__location-wrapper h2 {
@@ -4819,23 +4819,23 @@ button,
   .contacts__location-wrapper {
     width: 100%;
     height: 340px;
-    background-image: url("../img/map/map-tablet.png");
+    background-image: url("../img/map/map-tablet.webp");
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .contacts__location-wrapper {
-    background-image: url("../img/map/map-tablet@2x.png");
+    background-image: url("../img/map/map-tablet@2x.webp");
   }
 }
 @media (max-width: 767px) {
   .contacts__location-wrapper {
     height: 320px;
-    background-image: url("../img/map/map-tablet.png");
+    background-image: url("../img/map/map-tablet.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .contacts__location-wrapper {
-    background-image: url("../img/map/map-tablet@2x.png");
+    background-image: url("../img/map/map-tablet@2x.webp");
   }
 }
 

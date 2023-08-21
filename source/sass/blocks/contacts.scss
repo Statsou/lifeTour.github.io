@@ -221,13 +221,13 @@
   width: 585px;
   height: 324px;
 
-  background-image: url("../img/map/map-desktop.png");
+  background-image: url("../img/map/map-desktop.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/map/map-desktop@2x.png");
+    background-image: url("../img/map/map-desktop@2x.webp");
   }
 
   h2 {
@@ -244,20 +244,20 @@
     width: 100%;
     height: 340px;
 
-    background-image: url("../img/map/map-tablet.png");
+    background-image: url("../img/map/map-tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/map/map-tablet@2x.png");
+      background-image: url("../img/map/map-tablet@2x.webp");
     }
   }
 
   @include vp-767 {
     height: 320px;
 
-    background-image: url("../img/map/map-tablet.png");
+    background-image: url("../img/map/map-tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/map/map-tablet@2x.png");
+      background-image: url("../img/map/map-tablet@2x.webp");
     }
   }
 }

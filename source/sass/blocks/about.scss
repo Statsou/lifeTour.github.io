@@ -78,7 +78,7 @@
     width: 620px;
     height: 140px;
 
-    background-image: url("../img/about/about-clouds.png");
+    background-image: url("../img/about/about-clouds.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +87,7 @@
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/about/about-clouds@2x.png");
+      background-image: url("../img/about/about-clouds@2x.webp");
     }
   }
 
@@ -99,7 +99,7 @@
     width: 808px;
     height: 474px;
 
-    background-image: url("../img/about/about-image-desktop.png");
+    background-image: url("../img/about/about-image-desktop.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,7 +108,7 @@
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/about/about-image-desktop@2x.png");
+      background-image: url("../img/about/about-image-desktop@2x.webp");
     }
   }
 
@@ -147,10 +147,10 @@
       width: 476px;
       height: 403px;
 
-      background-image: url("../img/about/about-image-tablet.png");
+      background-image: url("../img/about/about-image-tablet.webp");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/about/about-image-tablet@2x.png");
+        background-image: url("../img/about/about-image-tablet@2x.webp");
       }
     }
   }
@@ -189,10 +189,10 @@
       width: 320px;
       height: 402px;
 
-      background-image: url("../img/about/about-image-mobile.png");
+      background-image: url("../img/about/about-image-mobile.webp");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/about/about-image-mobile@2x.png");
+        background-image: url("../img/about/about-image-mobile@2x.webp");
       }
     }
   }
