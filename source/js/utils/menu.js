@@ -56,7 +56,6 @@ const menu = function () {
     navigation.classList.remove('is-open');
     mainHeaderContainer.classList.remove('main-header__container--white');
     menuList.classList.remove('is-open');
-    navigation.classList.add('main-header__navigation--disabled');
     document.querySelector('body').style.overflow = 'visible';
   }
 
