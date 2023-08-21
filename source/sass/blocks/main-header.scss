@@ -1,0 +1,296 @@
+.main-header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: transparent;
+
+  @include vp-1199 {
+    position: static;
+
+    &.is-open {
+      height: 100%;
+      z-index: 2000;
+    }
+  }
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  padding: 40px 120px;
+  margin: 0 auto;
+
+  flex-wrap: wrap;
+
+  @include vp-1199 {
+    padding: 30px 45px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+  }
+}
+
+.main-header__container--active {
+  .main-header__phone {
+    color: $color-default-white;
+  }
+
+  .main-header__logo--dark {
+    display: none;
+  }
+
+  .main-header__logo--white {
+    display: block;
+  }
+}
+
+.main-header__container--white {
+  @include vp-1199 {
+    background-color: $color-default-white;
+
+    .main-header__logo-link {
+      left: 53px;
+    }
+
+    .main-header__logo--dark {
+      display: block;
+    }
+
+    .main-header__logo--white {
+      display: none;
+    }
+  }
+}
+
+.main-header__logo-link {
+  @include vp-1199 {
+    position: relative;
+    left: 50px;
+  }
+
+  @include vp-767 {
+    position: static;
+  }
+}
+
+.main-header__logo {
+  &--dark {
+    display: none;
+
+    @include vp-1199 {
+      display: block;
+    }
+  }
+
+  &--white {
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
+
+.main-header__navigation-button {
+  display: none;
+
+  border: none;
+  background-color: transparent;
+
+  .main-header__burger-icon {
+    fill: $color-default-white;
+  }
+
+  .main-header__cross-icon {
+    display: none;
+  }
+
+  @include vp-1199 {
+    display: block;
+    padding: 9px 0 4px 0;
+    order: -1;
+  }
+
+  @include vp-767 {
+    padding: 0 0 4px;
+  }
+}
+
+.main-header__navigation-button--active {
+  padding: 4px 0;
+
+  .main-header__cross-icon {
+    display: block;
+  }
+
+  .main-header__burger-icon {
+    display: none;
+  }
+
+  @include vp-767 {
+    padding: 0 1px 12px;
+  }
+}
+
+.main-header__navigation {
+  @include vp-1199 {
+    position: absolute;
+
+    &.is-open {
+      left: 0;
+      top: 75px;
+
+      width: 100%;
+      height: 100%;
+
+      z-index: -1;
+      background-color: $color-black-opacity;
+    }
+
+    &--disabled {
+      width: 100%;
+      position: static;
+      order: 4;
+    }
+  }
+}
+
+.main-header__menu-list {
+  display: flex;
+  max-width: 589px;
+  margin: 0;
+  padding: 0;
+
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  @include vp-1199 {
+    position: static;
+
+    display: block;
+    padding: 48px 0 34px;
+    max-width: none;
+    width: 100%;
+
+    background-color: $color-default-white;
+    order: 4;
+
+    &.is-active {
+      position: absolute;
+      left: 0;
+
+      display: none;
+      padding: 47px 45px 64px;
+      z-index: -1;
+    }
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @include vp-767 {
+    padding: 18px 0 31px;
+
+    &.is-active {
+      padding: 20px 15px 46px;
+    }
+  }
+}
+
+.main-header__menu-item:not(:last-child) {
+  margin-right: 22px;
+
+  @include vp-1199 {
+    margin: 0 0 18px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 14px;
+  }
+}
+
+.main-header__menu-link {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  padding: 3px 5px;
+
+  &:not(.disabled) {
+    @include hover {
+      border-bottom: 1px $color-default-white solid;
+    }
+
+    @include focus {
+      outline: 1px $color-default-white solid;
+    }
+
+    @include active {
+      border-bottom: none;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: initial;
+  }
+
+  @include vp-1199 {
+    font-weight: 700;
+    color: $color-elephant;
+    text-transform: uppercase;
+
+    display: block;
+    padding: 4px 0;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.main-header__phone {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-default-white;
+
+  &:not(.disabled) {
+    @include hover-focus {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.1;
+  }
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+    color: $color-elephant;
+
+    padding: 10px 0 6px 0;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: end;
+    width: 100%;
+    padding: 8px 0 6px 0;
+  }
+}

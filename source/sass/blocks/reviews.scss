@@ -1,0 +1,86 @@
+.reviews {
+  position: relative;
+  overflow: hidden;
+  padding: 55px 120px 118px;
+
+  h2 {
+    position: relative;
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+    color: $color-elephant;
+
+    max-width: 1200px;
+    margin: 0 auto 26px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      font-family: "Montserrat", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 55px;
+      line-height: 55px;
+      color: $color-elephant;
+
+      opacity: 0.03;
+      content: "Отзывы";
+    }
+  }
+
+  @include vp-1199 {
+    padding: 40px 45px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+
+      &::after {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding: 35px 15px 20px;
+
+    h2 {
+      font-size: 22px;
+      line-height: 22px;
+      margin: 0 0 33px;
+
+      &::after {
+        font-size: 26px;
+        line-height: 26px;
+        top: 0;
+        bottom: auto;
+      }
+    }
+  }
+}
+
+.reviews__slider-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.reviews__navigation {
+  position: absolute;
+  top: 41px;
+  right: 120px;
+
+  @include vp-1199 {
+    top: 25px;
+    right: 45px;
+  }
+
+  @include vp-767 {
+    right: 15px;
+  }
+}

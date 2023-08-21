@@ -1,0 +1,256 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  padding: 312px 0 307px;
+
+  background-color: $color-siam;
+  background-image: url("../img/feedback/background-desktop.png");
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/feedback/background-desktop@2x.png");
+  }
+
+  h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+    color: $color-default-white;
+
+    padding: 0 27px 0 10px;
+    margin: 0 0 18px;
+  }
+
+  p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-default-white;
+
+    padding: 0 27px 0 10px;
+    margin: 0 0 40px;
+  }
+
+  form {
+    display: flex;
+  }
+
+  fieldset {
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+
+    flex-wrap: wrap;
+    row-gap: 30px;
+    border: none;
+  }
+
+  @include vp-1199 {
+    padding: 195px 236px 183px;
+
+    background-image: url("../img/feedback/background-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback/background-tablet@2x.png");
+    }
+
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+      padding: 0;
+      margin: 0 0 20px;
+    }
+
+    p {
+      padding: 0;
+      margin: 0 0 28px;
+    }
+
+    form {
+      display: block;
+    }
+
+    fieldset {
+      display: block;
+    }
+  }
+
+  @include vp-767 {
+    padding: 179px 15px 160px;
+
+    background-position: initial;
+    background-image: url("../img/feedback/background-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback/background-mobile@2x.png");
+    }
+
+    h2 {
+      font-size: 22px;
+      line-height: 22px;
+      margin: 0 0 14px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 0 5px;
+      margin: 0 0 25px;
+    }
+  }
+}
+
+.feedback__form {
+  max-width: 978px;
+  margin: 0 auto;
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.feedback__input {
+  position: relative;
+  margin-right: 29px;
+
+  &.is-invalid {
+    outline: 1px $color-error solid;
+  }
+
+  input {
+    width: 340px;
+    padding: 23px 30px;
+    border: none;
+
+    &::placeholder {
+      font-family: "Montserrat", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    &:not(:disabled) {
+      @include hover {
+        outline: 1px $color-navy-blue solid;
+
+        &::placeholder {
+          color: $color-navy-blue;
+        }
+      }
+
+      @include active {
+        outline: 1px $color-resolution-blue solid;
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+
+      @include focus {
+        outline: 1px $color-resolution-blue solid;
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    &:disabled {
+      outline: 1px $color-mosque-opacity solid;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  @include vp-1199 {
+    margin: 0 0 7px;
+
+    &:last-child {
+      margin: 0 0 14px;
+    }
+
+    input {
+      width: 266px;
+      padding: 18px 15px 14px;
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    &:last-child {
+      margin: 0 0 9px;
+    }
+
+    input {
+      width: 100%;
+      padding: 18px 15px 13px;
+    }
+  }
+}
+
+.feedback__submit {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 239px;
+  height: max-content;
+  padding: 24px 0;
+
+  border: none;
+  background-color: $color-navy-blue;
+  flex-shrink: 0;
+
+  user-select: none;
+  cursor: pointer;
+
+  &:not(:disabled) {
+    @include hover-focus {
+      color: $color-resolution-blue;
+      background-color: $color-default-white;
+      outline: 1px $color-resolution-blue solid;
+    }
+  }
+
+  @include active-button {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    cursor: initial;
+  }
+
+  @include vp-1199 {
+    width: 266px;
+    padding: 21px 0;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 18px 0;
+  }
+}

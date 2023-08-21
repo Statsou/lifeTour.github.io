@@ -1,0 +1,19 @@
+.slider-gallery {
+  overflow: hidden;
+}
+
+.slider-gallery__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.slider-gallery__item {
+  display: grid;
+  width: max-content;
+  gap: 5px;
+
+  @include vp-767 {
+    gap: 3px;
+  }
+}

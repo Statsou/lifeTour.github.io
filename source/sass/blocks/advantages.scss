@@ -1,0 +1,125 @@
+.advantages {
+  position: relative;
+  padding: 19px 0 111px;
+
+  h2 {
+    position: relative;
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+    color: $color-elephant;
+
+    text-align: center;
+    margin: 0 0 47px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 34%;
+
+      font-family: "Montserrat", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 55px;
+      line-height: 55px;
+      color: $color-elephant;
+
+      opacity: 0.03;
+      content: "Преимущества";
+    }
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 460px;
+    left: 0;
+
+    width: 709px;
+    height: 377px;
+
+    background-image: url("../img/advantages/advantages-clouds-primary.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: "";
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages/advantages-clouds-primary@2x.png");
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    width: 603px;
+    height: 173px;
+
+    background-image: url("../img/advantages/advantages-clouds-secundary.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: "";
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages/advantages-clouds-secundary@2x.png");
+    }
+  }
+
+  @include vp-1199 {
+    padding: 48px 45px 19px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+
+      &::after {
+        left: auto;
+        right: 25%;
+
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    padding: 12px 15px;
+
+    h2 {
+      font-size: 22px;
+      line-height: 22px;
+      margin: 0 0 30px;
+
+      &::after {
+        font-size: 26px;
+        line-height: 26px;
+        right: 12%;
+      }
+    }
+  }
+}
+
+.advantages__navigation {
+  text-align: center;
+
+  @include vp-1199 {
+    display: none;
+  }
+}

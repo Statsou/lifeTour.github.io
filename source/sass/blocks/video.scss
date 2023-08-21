@@ -1,0 +1,72 @@
+.video {
+  position: relative;
+  max-width: 492px;
+
+  iframe {
+    position: absolute;
+    top: 0;
+
+    display: none;
+    height: 100%;
+    width: 100%;
+
+    border: none;
+  }
+
+  @include vp-1199 {
+    width: 442px;
+    height: 300px;
+  }
+}
+
+.video__button-play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  padding: 17px 12px 13px 17px;
+  margin: auto;
+  width: 56px;
+  height: 56px;
+
+  background-color: $color-white-opacity-secundary;
+  border: 1px $color-default-white solid;
+  border-radius: 50%;
+
+  svg {
+    fill: $color-default-white;
+    stroke: $color-default-white;
+  }
+
+  &:not(:disabled) {
+    @include hover-focus {
+      border: 1px $color-resolution-blue solid;
+      cursor: pointer;
+
+      svg {
+        stroke: $color-default-black;
+      }
+    }
+
+    @include active {
+      background-color: $color-resolution-blue;
+      border: 1px $color-resolution-blue solid;
+
+      svg {
+        stroke: $color-default-white;
+      }
+    }
+  }
+
+  &:disabled {
+    border: 1px $color-resolution-blue solid;
+    opacity: 0.1;
+
+    svg {
+      stroke: $color-resolution-blue;
+      fill: $color-resolution-blue;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.button-slider {
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  border: none;
+  user-select: none;
+
+  svg {
+    fill: $color-default-white;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0.1;
+  }
+
+  &:not(:disabled) {
+    @include hover-focus {
+      cursor: pointer;
+      background-color: $color-default-white;
+      outline: 1px $color-resolution-blue solid;
+
+      svg {
+        fill: $color-resolution-blue;
+      }
+    }
+  }
+
+  @include active-button {
+    background-color: $color-resolution-blue;
+
+    svg {
+      fill: $color-default-white;
+    }
+  }
+
+  :disabled {
+    opacity: 0.1;
+  }
+}
+
+.button-slider--next {
+  svg {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,139 @@
+.slider-advantages {
+  overflow: hidden;
+  margin: 0 0 49px;
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.slider-advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @include vp-1199 {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 28px;
+  }
+
+  @include vp-767 {
+    row-gap: 16px;
+  }
+}
+
+.slider-advantages__item {
+  text-align: center;
+  width: 380px;
+  height: auto;
+  min-height: 330px;
+  padding: 40px 20px;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-mosque-opacity;
+
+  svg {
+    width: 54px;
+    height: 54px;
+    padding: 16px;
+
+    margin: 0 0 22px;
+
+    border: 1px $color-navy-blue solid;
+  }
+
+  h3 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color-elephant;
+
+    margin: 0 0 15px;
+  }
+
+  p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: $color-elephant;
+
+    letter-spacing: 0.5px;
+
+    margin: 0;
+  }
+
+  @include vp-1199 {
+    width: 323px;
+    min-height: auto;
+    padding: 30px 19px;
+
+    svg {
+      width: 48px;
+      height: 48px;
+      padding: 13px;
+      margin: 0 0 19px;
+    }
+
+    h3 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0;
+    }
+  }
+
+  @include vp-767 {
+    padding: 19px 10px;
+    width: 100%;
+
+    svg {
+      width: 42px;
+      height: 42px;
+      padding: 11px;
+      margin: 0 0 18px;
+    }
+
+    h3 {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+
+.slider-advantages__space-desktop {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.slider-advantages__space-tablet {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.slider-advantages__space-mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}

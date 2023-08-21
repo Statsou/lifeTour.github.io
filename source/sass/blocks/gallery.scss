@@ -1,0 +1,118 @@
+.gallery {
+  position: relative;
+
+  h2 {
+    position: relative;
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+    color: $color-elephant;
+
+    max-width: 1440px;
+    padding: 0 120px;
+    margin: 19px auto 24px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 120px;
+
+      font-family: "Montserrat", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 55px;
+      line-height: 55px;
+      color: $color-elephant;
+
+      opacity: 0.03;
+      content: "Фотогалерея";
+    }
+  }
+
+  p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-elephant;
+
+    max-width: 1440px;
+    padding: 0 240px 0 120px;
+    margin: 0 auto 44px;
+  }
+
+  @include vp-1199 {
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+      padding: 0 130px 0 45px;
+
+      &::after {
+        left: 45px;
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+
+      padding: 0 300px 0 45px;
+      margin: 0 0 36px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 55px 0 0;
+
+    h2 {
+      font-size: 22px;
+      line-height: 22px;
+      padding: 0 15px;
+      margin: 0 0 15px;
+
+      &::after {
+        font-size: 26px;
+        line-height: 26px;
+        top: 0;
+        bottom: auto;
+        left: 15px;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+
+      padding: 0 15px;
+      margin: 0 0 65px;
+    }
+  }
+}
+
+.gallery__navigation {
+  position: absolute;
+  top: 66px;
+  right: 120px;
+
+  @include vp-1199 {
+    top: 62px;
+    right: 45px;
+  }
+
+  @include vp-767 {
+    top: 179px;
+    right: 15px;
+  }
+}
+
+.gallery__space-desktop {
+  @include vp-1199 {
+    display: none;
+  }
+}
