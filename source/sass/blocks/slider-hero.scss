@@ -11,6 +11,7 @@
 
 .slider-hero__item {
   padding: 182px 120px 80px;
+  height: auto;
 
   &--1 {
     background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-desktop-1.webp") center/cover no-repeat;
@@ -39,8 +40,8 @@
   @include vp-1199 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 46px 0 90px;
+    align-items: start;
+    padding: 174px 0 140px;
     min-height: 1024px;
 
     &--1 {
@@ -52,7 +53,6 @@
     }
 
     &--2 {
-      padding: 110px 0 90px;
       background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-2.webp") center/cover no-repeat;
 
       @media (min-resolution: 2dppx) {
@@ -61,7 +61,6 @@
     }
 
     &--3 {
-      padding: 0 0 118px;
       background: $black-to-hero, $color-rock-blue url("../img/hero/background-slider-tablet-3.webp") 21%/cover no-repeat;
 
       @media (min-resolution: 2dppx) {
@@ -71,14 +70,15 @@
   }
 
   @include vp-767 {
+    align-items: center;
     min-height: 568px;
-    padding: 70px 18px 30px;
+    padding: 93px 18px 54px;
   }
 }
 
 .slider-hero__content-slide {
   display: grid;
-  grid-template-columns: 717px 1fr;
+  grid-template-columns: 50vw 35vw;
   max-width: 1200px;
   margin: 0 auto;
 
@@ -173,6 +173,7 @@
 .slider-hero__video {
   position: relative;
   top: 8px;
+  right: 24px;
 
   max-width: 492px;
   margin-left: auto;
@@ -180,6 +181,7 @@
 
   @include vp-1199 {
     top: 0;
+    right: auto;
     margin: 0;
   }
 }
@@ -193,9 +195,9 @@
     top: auto;
   }
 }
-// ????
+
 .slider-hero__image {
-  margin-left: auto;
+  margin: 0 24px 0 auto;
 
   @include vp-1199 {
     margin: 0;
@@ -205,14 +207,14 @@
 .slider-hero__audio {
   align-self: center;
   text-align: center;
-  margin: 0 0 74px auto;
+  margin: 0 24px 74px auto;
 
   iframe {
     border: none;
   }
 
   @include vp-1199 {
-    margin: 0;
+    margin: 19px 0 0;
   }
 
   @include vp-767 {
@@ -231,8 +233,9 @@
 
   display: flex;
   justify-content: center;
-  width: 220px;
-  padding: 21px 0;
+  width: max-content;
+  max-width: 440px;
+  padding: 21px 54px;
   margin: 0 0 150px;
 
   background-color: $color-navy-blue;
@@ -345,13 +348,5 @@
         margin: 0 12px 0 0;
       }
     }
-  }
-}
-
-.slider-hero-space__mobile {
-  display: none;
-
-  @include vp-767 {
-    display: block;
   }
 }

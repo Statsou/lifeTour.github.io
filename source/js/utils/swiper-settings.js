@@ -13,8 +13,8 @@ const swiperSettings = function () {
     loop: false,
     watchSlidesVisibility: true,
     watchSlidesProgress: false,
-    slidesPerView: 1,
-    spaceBetween: 0,
+    slidesPerView: 'auto',
+    spaceBetween: 15,
     navigation: {
       nextEl: '.swiper-tours-button-next',
       prevEl: '.swiper-tours-button-prev',

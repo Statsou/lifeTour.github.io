@@ -22,6 +22,7 @@
 .slider-reviews__item-content {
   display: grid;
   grid-template-columns: 258px 1fr;
+  grid-template-rows: repeat(2, max-content);
   height: 100%;
   padding: 20px 40px 20px 20px;
 
@@ -120,22 +121,4 @@
   font-size: 12px;
   line-height: 12px;
   color: $color-elephant;
-}
-
-.slider-reviews__space-desktop {
-  @include vp-1199 {
-    display: none;
-  }
-}
-
-.slider-reviews__space-tablet {
-  display: none;
-
-  @include vp-1199 {
-    display: block;
-  }
-
-  @include vp-767 {
-    display: none;
-  }
 }

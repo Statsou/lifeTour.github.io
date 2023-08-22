@@ -1,11 +1,11 @@
 .contacts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 484px 1fr;
   margin: 0 auto;
   padding: 83px 120px 103px;
   max-width: 1440px;
 
-  gap: 132px;
+  gap: 9vw;
 
   h2 {
     position: relative;
@@ -174,7 +174,7 @@
     p {
       font-size: 14px;
       line-height: 22px;
-      width: max-content;
+      width: auto;
     }
   }
 
@@ -210,6 +210,23 @@
   line-height: 24px;
   color: $color-elephant;
 
+  width: auto;
+
+  &:not(.disabled) {
+    @include hover-focus {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.1;
+  }
+
   @include vp-1199 {
     font-size: 14px;
     line-height: 22px;
@@ -218,7 +235,7 @@
 
 .contacts__location-wrapper {
   align-self: flex-end;
-  width: 585px;
+  width: 100%;
   height: 324px;
 
   background-image: url("../img/map/map-desktop.webp");
@@ -241,7 +258,6 @@
   }
 
   @include vp-1199 {
-    width: 100%;
     height: 340px;
 
     background-image: url("../img/map/map-tablet.webp");
@@ -263,11 +279,10 @@
 }
 
 .contacts__location-map {
-  width: 585px;
-  height: 324px;
+  width: 100%;
+  height: 100%;
 
   @include vp-1199 {
-    width: 100%;
     height: 340px;
   }
 

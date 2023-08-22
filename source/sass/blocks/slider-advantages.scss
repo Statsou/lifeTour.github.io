@@ -20,7 +20,7 @@
   }
 
   @include vp-767 {
-    row-gap: 16px;
+    row-gap: 0;
   }
 }
 
@@ -107,33 +107,9 @@
       font-size: 14px;
       line-height: 14px;
     }
-  }
-}
 
-.slider-advantages__space-desktop {
-  display: block;
-
-  @include vp-1199 {
-    display: none;
-  }
-}
-
-.slider-advantages__space-tablet {
-  display: none;
-
-  @include vp-1199 {
-    display: block;
-  }
-
-  @include vp-767 {
-    display: none;
-  }
-}
-
-.slider-advantages__space-mobile {
-  display: none;
-
-  @include vp-767 {
-    display: block;
+    &:not(:last-child) {
+      margin: 0 0 16px;
+    }
   }
 }

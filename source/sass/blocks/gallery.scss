@@ -41,7 +41,7 @@
     color: $color-elephant;
 
     max-width: 1440px;
-    padding: 0 240px 0 120px;
+    padding: 0 580px 0 120px;
     margin: 0 auto 44px;
   }
 
@@ -97,7 +97,7 @@
 
 .gallery__navigation {
   position: absolute;
-  top: 66px;
+  top: 64px;
   right: 120px;
 
   @include vp-1199 {
@@ -108,11 +108,5 @@
   @include vp-767 {
     top: 179px;
     right: 15px;
-  }
-}
-
-.gallery__space-desktop {
-  @include vp-1199 {
-    display: none;
   }
 }
