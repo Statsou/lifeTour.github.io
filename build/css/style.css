@@ -2299,7 +2299,7 @@ button,
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
   }
 }
 @media (max-width: 767px) {
@@ -2915,7 +2915,7 @@ button,
             justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: start;
+            align-items: flex-start;
     padding: 174px 0 140px;
     min-height: 1024px;
   }
@@ -2987,7 +2987,7 @@ button,
   .slider-hero__content-slide {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: start;
+            justify-content: flex-start;
     min-height: 326px;
   }
 }
@@ -5341,7 +5341,7 @@ button,
 }
 @media (max-width: 767px) {
   .contacts {
-    padding: 82px 15px 29px;
+    padding: 82px 15px 30px;
   }
   .contacts h2 {
     font-size: 22px;

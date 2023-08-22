@@ -40,7 +40,7 @@
   @include vp-1199 {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     padding: 174px 0 140px;
     min-height: 1024px;
 
@@ -91,7 +91,7 @@
   }
 
   @include vp-767 {
-    justify-content: start;
+    justify-content: flex-start;
     min-height: 326px;
   }
 }
