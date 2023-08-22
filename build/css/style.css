@@ -5346,7 +5346,7 @@ button,
   .contacts h2 {
     font-size: 22px;
     line-height: 22px;
-    margin: 0 0 12px;
+    margin: 0 0 11px;
   }
   .contacts h2::after {
     font-size: 26px;
