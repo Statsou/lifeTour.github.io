@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {menu} from './utils/menu';
 import {playVideo} from './utils/play-video';
 import {maps} from './utils/map';
-import {swiperSettings} from './utils/swiper-settings'; // , createListenerSwipe
+import {swiperSettings} from './utils/swiper-settings';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 
@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   playVideo();
   swiperSettings();
   maps();
+  focusRisize();
 
   // Modules
   // ---------------------------------

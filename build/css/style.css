@@ -2257,12 +2257,16 @@ button,
 @media (max-width: 1199px) {
   .main-header__container {
     position: relative;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding: 30px 45px;
   }
 }
 @media (max-width: 767px) {
   .main-header__container {
     padding: 15px;
+    row-gap: 3px;
   }
 }
 
@@ -2337,7 +2341,7 @@ button,
 @media (max-width: 1199px) {
   .main-header__navigation-button {
     display: block;
-    padding: 9px 0 4px 0;
+    padding: 12px 0 4px 0;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -2345,12 +2349,12 @@ button,
 }
 @media (max-width: 767px) {
   .main-header__navigation-button {
-    padding: 0 0 4px;
+    padding: 3px 0;
   }
 }
 
 .main-header__navigation-button--active {
-  padding: 4px 0;
+  padding: 12px 1px 4px;
 }
 .main-header__navigation-button--active .main-header__cross-icon {
   display: block;
@@ -2360,7 +2364,7 @@ button,
 }
 @media (max-width: 767px) {
   .main-header__navigation-button--active {
-    padding: 0 1px 12px;
+    padding: 1px 1px 12px;
   }
 }
 
@@ -2370,10 +2374,11 @@ button,
   }
   .main-header__navigation.is-open {
     left: 0;
-    top: 100%;
+    top: 0;
+    margin: 104px 0 0 0;
     width: 100%;
     height: 100vh;
-    z-index: -1;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
   }
   .main-header__navigation.disabled {
@@ -2382,6 +2387,11 @@ button,
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+}
+@media (max-width: 767px) {
+  .main-header__navigation.is-open {
+    margin: 91px 0 0;
   }
 }
 
@@ -2426,7 +2436,7 @@ button,
     padding: 18px 0 31px;
   }
   .main-header__menu-list.is-active {
-    padding: 3px 15px 46px;
+    padding: 4px 15px 46px;
   }
 }
 
@@ -2487,6 +2497,37 @@ button,
   }
 }
 
+.main-header__phones-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@media (max-width: 1199px) {
+  .main-header__phones-list {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-height: 144px;
+    overflow-y: scroll;
+    z-index: 2;
+  }
+}
+@media (max-width: 767px) {
+  .main-header__phones-list {
+    width: 100%;
+    max-height: 96px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header__phones-item {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+  }
+}
+
 .main-header__phone {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -2527,9 +2568,7 @@ button,
     font-size: 14px;
     line-height: 14px;
     text-align: end;
-    width: 100%;
     padding: 8px 0 6px 0;
-    margin-left: 50%;
   }
 }
 
@@ -2558,6 +2597,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 1030px;
   max-width: 1440px;
   margin: 0 auto 16px;
   -ms-flex-wrap: wrap;
@@ -2565,6 +2605,7 @@ button,
 }
 @media (max-width: 1199px) {
   .main-footer__wrapper-primary {
+    min-width: auto;
     margin: 0 auto 37px;
   }
 }
@@ -2959,10 +3000,11 @@ button,
 }
 
 .slider-hero__content-slide {
+  position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50vw 35vw;
-  grid-template-columns: 50vw 35vw;
+  -ms-grid-columns: 769px 1fr;
+  grid-template-columns: 769px 1fr;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -3046,6 +3088,8 @@ button,
 .slider-hero__video,
 .slider-hero__picture,
 .slider-hero__audio {
+  position: absolute;
+  right: 0;
   -ms-grid-row-span: 3;
   grid-row: span 3;
 }
@@ -3053,6 +3097,7 @@ button,
   .slider-hero__video,
 .slider-hero__picture,
 .slider-hero__audio {
+    position: relative;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -3067,14 +3112,7 @@ button,
 }
 
 .slider-hero__video {
-  position: relative;
-  top: 8px;
-  right: 24px;
-  max-width: 492px;
-  margin-left: auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  top: 119px;
 }
 @media (max-width: 1199px) {
   .slider-hero__video {
@@ -3085,7 +3123,6 @@ button,
 }
 
 .slider-hero__picture {
-  position: relative;
   top: 20px;
 }
 @media (max-width: 1199px) {
@@ -3095,21 +3132,11 @@ button,
   }
 }
 
-.slider-hero__image {
-  margin: 0 24px 0 auto;
-}
-@media (max-width: 1199px) {
-  .slider-hero__image {
-    margin: 0;
-  }
-}
-
 .slider-hero__audio {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  text-align: center;
-  margin: 0 24px 74px auto;
+  margin: 0 0 74px;
 }
 .slider-hero__audio iframe {
   border: none;
@@ -3146,6 +3173,8 @@ button,
   padding: 21px 54px;
   margin: 0 0 150px;
   background-color: #0266c1;
+  -ms-grid-column: 1;
+  grid-column: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -3184,7 +3213,9 @@ button,
 }
 @media (max-width: 767px) {
   .slider-hero__link {
-    padding: 18px 34px;
+    text-align: center;
+    width: 63%;
+    padding: 18px 33px;
   }
 }
 
@@ -3196,6 +3227,8 @@ button,
   margin: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-grid-column: 1;
+  grid-column: 1;
   list-style-type: none;
 }
 @media (max-width: 1199px) {
@@ -3368,7 +3401,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__content {
-    padding: 67px 0 52px 15px;
+    padding: 67px 15px 52px;
   }
   .tours__content h2 {
     font-size: 22px;
@@ -3478,10 +3511,10 @@ button,
   .tours__link {
     font-size: 14px;
     line-height: 14px;
-    padding: 0 32px 0 0;
+    padding: 0 18px 0 0;
   }
   .tours__link::after {
-    right: 20px;
+    right: 5px;
   }
 }
 
@@ -3564,11 +3597,83 @@ button,
   opacity: 0.2;
   content: "";
 }
+@media (max-width: 1199px) {
+  .slider-tours__item--1 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-1.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-1.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .slider-tours__item--1 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-1@2x.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-1@2x.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 1199px) {
+  .slider-tours__item--2 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-2.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-2.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .slider-tours__item--2 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-2@2x.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-2@2x.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 1199px) {
+  .slider-tours__item--3 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-3.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-3.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .slider-tours__item--3 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-3@2x.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-3@2x.webp") center/100% 100% no-repeat;
+  }
+}
 @media (max-width: 767px) {
   .slider-tours__item {
     width: 290px;
     padding: 197px 20px 22px;
   }
+  .slider-tours__item--1 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-1.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-1.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .slider-tours__item--1 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-1@2x.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-1@2x.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 767px) {
+  .slider-tours__item--2 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-2.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-2.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .slider-tours__item--2 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-2@2x.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-2@2x.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 767px) {
+  .slider-tours__item--3 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-3.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-3.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .slider-tours__item--3 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-3@2x.webp") center/100% 100% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-3@2x.webp") center/100% 100% no-repeat;
+  }
+}
+@media (max-width: 767px) {
   .slider-tours__item h3 {
     font-size: 20px;
     line-height: 24px;
@@ -3891,7 +3996,6 @@ button,
 }
 @media (max-width: 1199px) {
   .training__process-list {
-    position: relative;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -3903,32 +4007,23 @@ button,
     padding: 0 20px;
     overflow: hidden;
   }
-  .training__process-list::after {
-    position: absolute;
-    left: 20px;
-    top: 34%;
-    width: 50%;
-    height: 56px;
-    background-color: transparent;
-    border-top: 1px rgba(2, 102, 193, 0.1) solid;
-    border-right: 1px rgba(2, 102, 193, 0.1) solid;
-    border-bottom: 1px rgba(2, 102, 193, 0.1) solid;
-    content: "";
-  }
 }
 @media (max-width: 767px) {
   .training__process-list {
+    position: relative;
     display: block;
     padding: 0 20px 0 25px;
     overflow: visible;
   }
   .training__process-list::after {
+    position: absolute;
     left: 24px;
     top: 20px;
     width: 1px;
     height: 183px;
     background-color: rgba(2, 102, 193, 0.1);
     border: none;
+    content: "";
   }
 }
 
@@ -3975,15 +4070,38 @@ button,
             order: 1;
   }
   .training__process-item::after {
-    top: 54px;
+    top: auto;
+    bottom: -24px;
   }
-  .training__process-item::before {
+  .training__process-item--1::before {
     position: absolute;
-    bottom: 57px;
-    width: 14px;
-    height: 14px;
-    background-color: #0266c1;
-    border-radius: 50%;
+    bottom: -17px;
+    left: 0;
+    width: 355px;
+    height: 1px;
+    background-color: rgba(2, 102, 193, 0.1);
+    content: "";
+  }
+  .training__process-item--2::before {
+    position: absolute;
+    bottom: -65px;
+    left: 6px;
+    width: 1px;
+    height: 56px;
+    background-color: rgba(2, 102, 193, 0.1);
+    content: "";
+  }
+  .training__process-item--3::after, .training__process-item--4::after {
+    top: -27px;
+    bottom: auto;
+  }
+  .training__process-item--4::before {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 355px;
+    height: 1px;
+    background-color: rgba(2, 102, 193, 0.1);
     content: "";
   }
 }
@@ -4084,7 +4202,6 @@ button,
 }
 @media (max-width: 767px) {
   .slider-training__item {
-    max-width: 290px;
     padding: 20px 20px 19px;
   }
 }
@@ -4854,6 +4971,7 @@ button,
   .gallery p {
     font-size: 12px;
     line-height: 18px;
+    max-width: 320px;
     padding: 0 15px;
     margin: 0 0 65px;
   }

@@ -174,7 +174,6 @@
   list-style-type: none;
 
   @include vp-1199 {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 28px;
@@ -182,30 +181,16 @@
     padding: 0 20px;
 
     overflow: hidden;
-
-    &::after {
-      position: absolute;
-      left: 20px;
-      top: 34%;
-
-      width: 50%;
-      height: 56px;
-
-      background-color: transparent;
-      border-top: 1px $color-pattens-blue-opacity solid;
-      border-right: 1px $color-pattens-blue-opacity solid;
-      border-bottom: 1px $color-pattens-blue-opacity solid;
-
-      content: "";
-    }
   }
 
   @include vp-767 {
+    position: relative;
     display: block;
     padding: 0 20px 0 25px;
     overflow: visible;
 
     &::after {
+      position: absolute;
       left: 24px;
       top: 20px;
 
@@ -214,6 +199,8 @@
 
       background-color: $color-pattens-blue-opacity;
       border: none;
+
+      content: "";
     }
   }
 }
@@ -262,20 +249,58 @@
     }
 
     &::after {
-      top: 54px;
+      top: auto;
+      bottom: -24px;
     }
 
-    &::before {
-      position: absolute;
-      bottom: 57px;
+    &--1 {
+      &::before {
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+        width: 355px;
+        height: 1px;
 
-      width: 14px;
-      height: 14px;
+        background-color: $color-pattens-blue-opacity;
 
-      background-color: $color-navy-blue;
-      border-radius: 50%;
+        content: "";
+      }
+    }
 
-      content: "";
+    &--2 {
+      &::before {
+        position: absolute;
+        bottom: -65px;
+        left: 6px;
+        width: 1px;
+        height: 56px;
+
+        background-color: $color-pattens-blue-opacity;
+
+        content: "";
+      }
+    }
+
+    &--3,
+    &--4 {
+      &::after {
+        top: -27px;
+        bottom: auto;
+      }
+    }
+
+    &--4 {
+      &::before {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 355px;
+        height: 1px;
+
+        background-color: $color-pattens-blue-opacity;
+
+        content: "";
+      }
     }
   }
 

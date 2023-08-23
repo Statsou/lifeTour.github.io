@@ -15,12 +15,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 1030px;
   max-width: 1440px;
   margin: 0 auto 16px;
 
   flex-wrap: wrap;
 
   @include vp-1199 {
+    min-width: auto;
     margin: 0 auto 37px;
   }
 
