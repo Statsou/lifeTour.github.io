@@ -2500,7 +2500,12 @@ button,
 .main-header__phones-list {
   padding: 0;
   margin: 0;
+  max-height: 60px;
   list-style-type: none;
+  overflow-y: scroll;
+}
+.main-header__phones-list::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 1199px) {
   .main-header__phones-list {
@@ -2508,7 +2513,6 @@ button,
         -ms-grid-row-align: center;
         align-self: center;
     max-height: 144px;
-    overflow-y: scroll;
     z-index: 2;
   }
 }
@@ -3597,83 +3601,11 @@ button,
   opacity: 0.2;
   content: "";
 }
-@media (max-width: 1199px) {
-  .slider-tours__item--1 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-1.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-1.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
-  .slider-tours__item--1 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-1@2x.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-1@2x.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 1199px) {
-  .slider-tours__item--2 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-2.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-2.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
-  .slider-tours__item--2 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-2@2x.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-2@2x.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 1199px) {
-  .slider-tours__item--3 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-3.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-3.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
-  .slider-tours__item--3 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-tablet-3@2x.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-tablet-3@2x.webp") center/100% 100% no-repeat;
-  }
-}
 @media (max-width: 767px) {
   .slider-tours__item {
     width: 290px;
     padding: 197px 20px 22px;
   }
-  .slider-tours__item--1 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-1.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-1.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-  .slider-tours__item--1 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-1@2x.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-1@2x.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 767px) {
-  .slider-tours__item--2 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-2.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-2.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-  .slider-tours__item--2 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-2@2x.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-2@2x.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 767px) {
-  .slider-tours__item--3 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-3.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-3.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-  .slider-tours__item--3 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0))), url("../img/tours/background-slider-mobile-3@2x.webp") center/100% 100% no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%), url("../img/tours/background-slider-mobile-3@2x.webp") center/100% 100% no-repeat;
-  }
-}
-@media (max-width: 767px) {
   .slider-tours__item h3 {
     font-size: 20px;
     line-height: 24px;
